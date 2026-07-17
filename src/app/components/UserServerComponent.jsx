@@ -5,8 +5,8 @@ async function fetchUsers(){
   if(!response.ok) {
     throw new Error(`HTTP Error ${response.status}`);
   }
-  let data = await response.json()
-  return data
+  let result = await response.json()
+  return result.data
 }
 
 
