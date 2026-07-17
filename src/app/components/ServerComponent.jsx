@@ -21,7 +21,7 @@ export default async function ServerComponent(){
         {
          products.map(
           (product, index) => (
-            <li key={index}>{product.title} - {product.price}</li>
+            <li key={index}>{product.title} - {product.body}</li>
           )
          )
         }
