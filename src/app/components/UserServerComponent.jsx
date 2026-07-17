@@ -6,14 +6,14 @@ async function fetchUsers(){
     throw new Error(`HTTP Error ${response.status}`);
   }
   let result = await response.json()
-  return result.data
+  return result
 }
 
 
 export default async function UserServerComponent(){
   
-  const users =  await fetchUsers() 
-  
+  const result =  await fetchUsers() 
+  const users = result.data
   return(
     <div>
       <ul>
