@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 async function fetchUsers(){
-  const response = await fetch("https://reqres.in/api/users?page=1&appid=free_user_3GdIlFhYZBaYBIuk2Ys3rrlpmh6",{cache: "no-store",});
+  const response = await fetch("https://reqres.in/api/users",{cache: "no-store",});
   if(!response.ok) {
     throw new Error(`HTTP Error ${response.status}`);
   }
