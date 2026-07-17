@@ -1,5 +1,8 @@
 async function fetchProducts(){
-  let response = await fetch("https://fakestoreapi.com/products")
+  const response = await fetch("https://fakestoreapi.com/products");
+  if(!response.ok) {
+    throw new Error(`HTTP Error ${response.status}`);
+  }
   let data     = await response.json()
   return data
 }
