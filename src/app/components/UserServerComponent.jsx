@@ -18,7 +18,7 @@ export default async function UserServerComponent(){
     <div>
       <ul>
         {
-         products.map(
+         users.map(
           (user) => (
             <li key={user.id}>
               <p> {user.first_name} {user.last_name}</p> 
