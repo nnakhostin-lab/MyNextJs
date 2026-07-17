@@ -1,6 +1,6 @@
 async function fetchProducts(){
   //const response = await fetch("https://fakestoreapi.com/products",{cache: "no-store",});
-  const response = await fetch("httPS://jsonplaceholder.typicode.com/posts");
+  const response = await fetch("httPS://jsonplaceholder.typicode.com/posts",{cache: "no-store",});
   if(!response.ok) {
     throw new Error(`HTTP Error ${response.status}`);
   }
