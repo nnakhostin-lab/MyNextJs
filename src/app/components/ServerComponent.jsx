@@ -1,5 +1,5 @@
 async function fetchProducts(){
-  const response = await fetch("https://fakestoreapi.com/products");
+  const response = await fetch("https://fakestoreapi.com/products",{cache: "no-store",});
   if(!response.ok) {
     throw new Error(`HTTP Error ${response.status}`);
   }
