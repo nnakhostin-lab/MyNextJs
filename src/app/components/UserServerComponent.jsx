@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 async function fetchUsers(){
-  const response = await fetch("https://reqres.in/api/users",1{headers: {"x-api-key":"reqres_86da083276a64c86a5deca70cc80f86b"},{cache: "no-store",});
+  const response = await fetch("https://reqres.in/api/users",{headers: {"x-api-key":"reqres_86da083276a64c86a5deca70cc80f86b",},{cache: "no-store",});
   if(!response.ok) {
     throw new Error(`HTTP Error ${response.status}`);
   }
