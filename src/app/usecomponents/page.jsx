@@ -7,6 +7,7 @@ export default function UseComponents() {
   return (
     <div>
       <h1>   پروژه فروشگاه</h1>
+      <ServerComponent/>
       <ClientComponent/>  
     </div>
   )
